@@ -1,0 +1,235 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Evitar barra de rolagem */
+html, body {
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Impede que elementos internos causem rolagem horizontal */
+.container, .row, .navbar, .footer-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    height: 80px;
+    background-color: #004F9F;
+    padding: 5px 0;
+}
+
+.navbar .container {
+    height: 100%;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #ffffff;
+    color: #004F9F;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-bar a {
+    color: #004F9F;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos do Carrossel */
+.carousel-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-caption.custom-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption.custom-caption h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.carousel-caption.custom-caption p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Ajustes Gerais */
+.container.text-center.my-5 {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.gov-logo {
+    max-height: 90px;
+    width: auto;
+}
+
+.detran-logo {
+    max-height: 50px;
+    height: auto;
+    width: auto;
+}
+
+.social-icons a {
+    font-size: 18px;
+}
+
+.img-fluid {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Ajuste da Seção de Cards */
+.row {
+    /* Sobrescrevendo o overflow para permitir animação vertical sem corte */
+    overflow-x: hidden;
+    overflow-y: visible;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens */
+    gap: 15px; /* Espaço entre os cards */
+}
+
+.col {
+    flex: 0 0 calc(20% - 15px); /* Define largura para caber 5 cards por linha */
+    max-width: calc(20% - 15px);
+}
+
+/* Ajustes dos Cards */
+.card-button {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.card-button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.card-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.card-text {
+    color: #000000;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Ícone ao lado do texto */
+.icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+}
+
+.icon-text i {
+    font-size: 1.5em;
+    color: #004F9F; /* Cor do ícone */
+}
+
+.card-title {
+    font-size: 1.2em;
+    color: #000000;
+    margin: 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f8f9fa;
+}
+
+/* Rodapé - Reduzindo o tamanho do container mas mantendo imagens e textos inalterados */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;  /* Ajuste do padding conforme desejado */
+    background-color: #004F9F;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-container img {
+    max-width: 150px; /* Tamanho das logos mantido */
+}
+
+.footer-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .col {
+        flex: 0 0 calc(33.333% - 15px); /* 3 cards por linha em telas menores */
+        max-width: calc(33.333% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 calc(50% - 15px); /* 2 cards por linha em tablets */
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .col {
+        flex: 0 0 100%; /* 1 card por linha em telas pequenas */
+        max-width: 100%;
+    }
+
+    .footer-container img {
+        max-width: 100px; /* Ajusta logo no rodapé para telas menores */
+    }
+}

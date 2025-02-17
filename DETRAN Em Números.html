@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DETRAN Em Números - Dados Abertos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="img-logo/icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <!-- TOP BAR - CABEÇALHO -->
+    <div class="top-bar d-flex justify-content-between align-items-center p-2">
+      <div class="d-flex gap-3">
+        <a href="https://www.detran.ms.gov.br/">IR PARA SITE DETRAN MS</a>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="https://www.meudetran.ms.gov.br/">IR PARA MEU DETRAN</a>
+      </div>
+    </div>
+ 
+    <!-- NAVBAR - MENU DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container d-flex justify-content-between align-items-center">
+        <img src="img-logo/ms_gov_br_logo.png" alt="ms.gov.br" class="gov-logo">
+        <a class="navbar-brand" href="#">
+          <img src="img-logo/LogoDetranEmNumeros_2025.png" alt="DETRAN EM NÚMEROS" class="detran-logo">
+        </a>
+        <div class="social-icons d-flex gap-2">
+          <a href="https://www.facebook.com/detranmsoficial"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/detranms"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCaGCceesScp9pTVzhxNVwAg"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- SLIDES -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img-banner/banner_1.jpg" class="d-block w-100" alt="Banner 1">
+            <div class="carousel-caption custom-caption">
+                <h2>ESTUDOS, PESQUISAS E ANÁLISE DE DADOS</h2>
+                <p>Trabalhamos pela preservação de vidas e pela segurança no trânsito</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img-banner/banner_2.jpg" class="d-block w-100" alt="Banner 2">
+            <div class="carousel-caption custom-caption">
+                <h2>TRANSFORMANDO DE VERDADE</h2>
+                <p>Com dados e tecnologia, buscamos melhorar a segurança no trânsito para todos</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img-banner/banner_3.jpg" class="d-block w-100" alt="Banner 3">
+            <div class="carousel-caption custom-caption">
+                <h2>TRANSPARÊNCIA E INFORMAÇÃO</h2>
+                <p>Dados revisados e reais, informação de ponta e precisa para o cidadão</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+  <!-- CONTEÚDO PRINCIPAL -->
+  <section class="container text-center my-5">
+    <h2 style="color: #004F9F; margin-bottom: 30px;">Selecione um painel no menu para acessar os dados</h2>
+    <div class="row row-cols-6 row-cols-md-6 g-4">
+      
+      <div class="col">
+        <a class="card card-button h-100 text-decoration-none" href="https://dd.serpro.gov.br/publico/sense/app/03878a1c-2594-4435-82d1-41559d2f950b/sheet/58bfbc60-946f-4e3f-8ca8-17e08dac8d0a/state/analysis" target="_blank" rel="noopener noreferrer">
+          <div class="card-body text-center">
+            <div class="icon-text">
+              <i class="fas fa-car-crash"></i>
+              <h3 class="card-title">ACIDENTES</h3>
+            </div>
+            <hr class="card-divider">
+            <p class="card-text">Informações e estatísticas sobre acidentes de trânsito.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a class="card card-button h-100 text-decoration-none" href="https://paineis.msindicadores.ms.gov.br/publico/single/?appid=677d876a-42d3-48e3-b5af-654bfafb32a9&sheet=c16c2a0b-436f-45f1-9fe0-01aeb0ea1a2a&theme=breeze&opt=ctxmenu,currsel" target="_blank" rel="noopener noreferrer">
+          <div class="card-body text-center">
+            <div class="icon-text">
+              <i class="fas fa-id-card"></i>
+              <h3 class="card-title">CONDUTORES</h3>
+            </div>
+            <hr class="card-divider">
+            <p class="card-text">Informações de condutores habilitados e candidatos.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a class="card card-button h-100 text-decoration-none" href="https://paineis.msindicadores.ms.gov.br/publico/single/?appid=677d876a-42d3-48e3-b5af-654bfafb32a9&sheet=7bdfaf0a-04ef-4263-b947-3bf063740f6a&theme=breeze&opt=ctxmenu,currsel" target="_blank" rel="noopener noreferrer">
+          <div class="card-body text-center">
+            <div class="icon-text">
+              <i class="fas fa-graduation-cap"></i>
+              <h3 class="card-title">EXAMES CFC'S</h3>
+            </div>
+            <hr class="card-divider">
+            <p class="card-text">Dados sobre exames aplicados nos Centros de Formação de Condutores.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a class="card card-button h-100 text-decoration-none" href="https://paineis.msindicadores.ms.gov.br/publico/single/?appid=677d876a-42d3-48e3-b5af-654bfafb32a9&sheet=e03118fd-629c-4ab3-8fc9-6a4532a0465e&theme=breeze&opt=ctxmenu,currsel" target="_blank" rel="noopener noreferrer">
+          <div class="card-body text-center">
+            <div class="icon-text">
+              <i class="fas fa-exclamation-triangle"></i>
+              <h3 class="card-title">INFRAÇÕES</h3>
+            </div>
+            <hr class="card-divider">
+            <p class="card-text">Quantidade e tipos de infrações registradas no trânsito.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a class="card card-button h-100 text-decoration-none" href="https://paineis.msindicadores.ms.gov.br/publico/single/?appid=677d876a-42d3-48e3-b5af-654bfafb32a9&sheet=627a8af0-fbd3-458f-8006-f8532d7f3074&theme=breeze&opt=ctxmenu,currsel" target="_blank" rel="noopener noreferrer">
+          <div class="card-body text-center">
+            <div class="icon-text">
+              <i class="fas fa-car"></i>
+              <h3 class="card-title">VEÍCULOS</h3>
+            </div>
+            <hr class="card-divider">
+            <p class="card-text">Dados e estatísticas sobre a frota de veículos em MS.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer id="footer" class="footer-container">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="img-logo/Logo_Detran.png" alt="Logo DETRAN" class="footer-logo">
+      <div class="footer-text">
+        <p><strong>Departamento Estadual de Trânsito de Mato Grosso do Sul</strong></p>
+        <p>Rodovia MS-80 Km 10, Campo Grande - MS, CEP: 79114-901</p>
+        <p>Central de Informações - Capital: (67) 3368-0154 / Interior: (67) 3368-0500</p>
+      </div>
+      <img src="img-logo/Governo_ms_logo.png" alt="Logo Governo MS" class="footer-logo">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
